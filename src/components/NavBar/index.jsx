@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 // import "./navBar.css"
+import CartWidget from '../CartWidget';
 
 export const NavBar = () => {
 
@@ -29,7 +30,7 @@ export const NavBar = () => {
               <a className='nav-link' href='#' onClick={closeMenu}>Astractos</a>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='#' onClick={closeMenu}>carrito</a>
+              <a className='nav-link' href='#' onClick={closeMenu}><CartWidget /></a>
             </li>
           </ul>
           
