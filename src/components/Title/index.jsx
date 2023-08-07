@@ -1,10 +1,11 @@
 import React from 'react'
+import './title.css'
 
 const Title = ({ greeting}) => {
   return (
     <>
-        <h1>{greeting}</h1>
-        <p>La mejor galeria de arte</p>
+        <h1 className='title'>{greeting}</h1>
+        <p className='txt'>La mejor galeria de arte</p>
     </>
     
 
