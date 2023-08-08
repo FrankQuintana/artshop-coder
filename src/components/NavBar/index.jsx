@@ -27,7 +27,7 @@ export const NavBar = () => {
               <a className='nav-link' href='#' onClick={closeMenu}>Mafia</a>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='#' onClick={closeMenu}>Astractos</a>
+              <a className='nav-link' href='#' onClick={closeMenu}>Abstractos</a>
             </li>
             <li className='nav-item'>
               <a className='nav-link' href='#' onClick={closeMenu}><CartWidget /></a>

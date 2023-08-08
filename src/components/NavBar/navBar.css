@@ -28,7 +28,7 @@
 }
 .nav-menu {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(5, auto);
     align-items: center;
     list-style: none;
     text-align: center;
@@ -37,7 +37,7 @@
     margin-right: 2rem;
 }
 .nav-item {
-    height: 150px;
+    height: 120px;
 }
 .nav-link {
     color: #fff;
@@ -82,7 +82,6 @@
       padding: 1rem;
       width: 100%;
       display: table;
-      color: #f444ff;
     }
   
     .nav-link:hover {
