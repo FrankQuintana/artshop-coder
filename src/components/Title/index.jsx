@@ -5,8 +5,11 @@ const Title = ({ greeting }) => {
   return (
     <>
       <div className='container-title'>
-        <h1 className='title'>{greeting}</h1>
-        <p className='txt'>La mejor galeria de arte</p>
+        <img className='fondo' src='../src/assets/fondo.jpg'/>
+        <div className='content'>
+          <h1 className='title'>{greeting}</h1>
+          <p className='txt'>Galeria de arte moderno, diseños inimaginables...</p>
+        </div>
       </div>
     </>
     

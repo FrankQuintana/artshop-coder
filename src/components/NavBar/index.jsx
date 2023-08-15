@@ -11,7 +11,7 @@ export const NavBar = () => {
     return (
       <div className='container'>
         <nav className='nav'>
-          <a className='nav-logo' href='#' onClick={closeMenu} >ART-SHOP</a>
+          <a className='nav-logo' href='#' onClick={closeMenu} >ÄRT-SHÖP</a>
           <div className='menu-icon' onClick={handleClick}>
               <i className={click ? 'bi bi-x' : 'bi bi-list'} />
           </div>
