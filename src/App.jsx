@@ -1,13 +1,11 @@
 import './App.css'
-import NavBar from './components/NavBar'
-import ItemListContainer from './components/ItemListContainer'
+import Router from './router/router'
 
 function App() {
 
   return (
     <>
-      <NavBar />
-      <ItemListContainer />
+      <Router />
     </>
   )
 }

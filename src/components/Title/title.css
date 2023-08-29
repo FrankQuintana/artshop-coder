@@ -1,5 +1,5 @@
 .container-title {
-    width: 100vw;
+    width: 100%;
     position: relative;
     display: inline-block;
     text-align: center;
@@ -10,7 +10,7 @@
 }
 .fondo {
     object-fit: cover;
-    width: 100%;
+    width: 90%;
     opacity: 0.4;
     
 }
