@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import "./navBar.css"
 import CartWidget from '../CartWidget';
+import { NavLink } from 'react-router-dom';
 
 export const NavBar = () => {
 
@@ -11,26 +12,26 @@ export const NavBar = () => {
     return (
       <div className='container'>
         <nav className='nav'>
-          <a className='nav-logo' href='#' onClick={closeMenu} >ÄRT-SHÖP</a>
+          <NavLink className='nav-logo' to='/' onClick={closeMenu} >ÄRT-SHÖP</NavLink>
           <div className='menu-icon' onClick={handleClick}>
               <i className={click ? 'bi bi-x' : 'bi bi-list'} />
           </div>
   
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <a className='nav-link' href='#' onClick={closeMenu}>Inicio</a>
+              <NavLink className='nav-link' to='/' onClick={closeMenu}>Inicio</NavLink>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='#' onClick={closeMenu}>Geometricos</a>
+              <NavLink className='nav-link' to='/categoria/geometricos' onClick={closeMenu}>Geometricos</NavLink>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='#' onClick={closeMenu}>Mafia</a>
+              <NavLink className='nav-link' to='/categoria/cartoon' onClick={closeMenu}>Cartoon</NavLink>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='#' onClick={closeMenu}>Abstractos</a>
+              <NavLink className='nav-link' to='/categoria/abstractos' onClick={closeMenu}>Abstractos</NavLink>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='#' onClick={closeMenu}><CartWidget /></a>
+              <NavLink className='nav-link' to='/cart' onClick={closeMenu}><CartWidget /></NavLink>
             </li>
           </ul>
           

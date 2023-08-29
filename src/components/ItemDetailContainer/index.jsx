@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import Title from '../Title'
-import ItemList from '../ItemList';
-import { useParams } from 'react-router-dom';
+import ItemDetail from '../ItemDetail'
+
+import { useParams } from 'react-router-dom'
 
 const arte = [
   { id: 1,
@@ -36,33 +36,23 @@ const arte = [
   }
 ];
 
-const ItemListContainer = () => {
+const ItemDetailContainer = () => {
+    const [data, setData] = useState({});
 
-  const [data, setData] = useState([]);
+    const { detalleId } = useParams();
 
-  const { categoriaId } = useParams();
+    useEffect(() => {
+        const getData = new Promise(resolve => {
+          setTimeout(() => {
+            resolve(arte)
+          }, 2000);
+        });
+        getData.then(res => setData(res.find(art => art.id === parseInt(detalleId))));
+      }, [])
 
-  useEffect(() => {
-    const getData = new Promise(resolve => {
-      setTimeout(() => {
-        resolve(arte)
-      }, 1000);
-    });
-    if (categoriaId) {
-      getData.then(res => setData(res.filter(art => art.category === categoriaId)));
-    } else {
-      getData.then(res => setData(res));
-    }
-  }, [categoriaId])
-  
-
-  
   return (
-    <>
-      <Title greeting='ART-SHOP' />
-      <ItemList data={data} />
-    </>
+    <ItemDetail data={data} />
   )
 }
 
-export default ItemListContainer
+export default ItemDetailContainer
