@@ -11,7 +11,6 @@ const Title = ({ greeting }) => {
         </div>
       </div>
     </>
-    
 
   )
 }
