@@ -11,7 +11,7 @@ const ItemDetail = ({ data }) => {
     <div className="detail__container">
         <div className="detail">
             <img className="detail__img" src={data.image} alt={data.title} />
-            <div className="content">
+            <div className="content-detail">
                 <h1 className='title-detail'>{data.title}</h1>
                 <ItemCount initial={1} stock={5} onAdd={onAdd} />
             </div>
