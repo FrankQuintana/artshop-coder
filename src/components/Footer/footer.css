@@ -1,0 +1,11 @@
+.container-footer {
+    background: #252422;
+    padding: 30px 0 20px 0;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+    color: #ccc;
+}
