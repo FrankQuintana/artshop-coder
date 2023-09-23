@@ -30,8 +30,19 @@
     font-size: 25px;
     padding: 5px 10px;
     cursor: pointer;
-    /* margin-left: 172px;
-    margin-top: 15px; */
     border-radius: 8px;
     font-weight: 300;
+    margin-bottom: 15px;
+}
+.cont-ref {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.ref-txt {
+    text-align: center;
+    font-size: 1.4rem;
 }

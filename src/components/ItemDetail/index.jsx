@@ -20,7 +20,7 @@ const ItemDetail = ({ data }) => {
                 <h1 className='title-detail'>{data.title}</h1>
                 {
                   goCart
-                    ? <Link to='/cart'>Terminar compra</Link>
+                    ? <Link to='/cart'><button className='btn-detail'>Terminar compra</button></Link>
                     : <ItemCount initial={1} stock={5} onAdd={onAdd} />
                 }
             </div>

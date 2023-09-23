@@ -29,8 +29,8 @@ const Checkout = () => {
     if (pedidoId) {
         return (
             <div className='cont-ref'>
-                <h1>Gracias por tu compra</h1>
-                <p>Tu numero de pedido es: {pedidoId}</p>
+                <h1 className='ref-title'>Gracias por tu compra</h1>
+                <p className='ref-txt'>Tu número de pedido es: <b> {pedidoId} </b></p>
             </div>
         )
     }

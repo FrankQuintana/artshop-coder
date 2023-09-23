@@ -22,6 +22,21 @@
     background-color: #fff;
     color: #454545;
 }
+.cont-fin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .price {
     text-align: center;
+}
+.btn-fin {
+    margin: 30px 20px;
+    padding: 10px;
+    width: 90vw;
+    border: #58a0b4 solid 1px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1.5rem;
 }
