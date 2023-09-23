@@ -6,6 +6,7 @@ import ItemListContainer from '../components/ItemListContainer'
 import Cart from '../components/Cart'
 import Footer from '../components/Footer'
 import CartProvider from '../context/CartContext'
+import Checkout from '../components/Checkout'
 
 
 
@@ -19,6 +20,7 @@ export default function Router() {
             <Route path='/' element={<ItemListContainer />} />
             <Route path='/categoria/:categoriaId' element={<ItemListContainer />} />
             <Route path='/cart' element={<Cart />} />
+            <Route path='checkout' element={<Checkout />} />
             <Route path='/detalle/:detalleId' element={<ItemDetailContainer />} />
           </Routes>
         </CartProvider>
