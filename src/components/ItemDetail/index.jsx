@@ -15,9 +15,15 @@ const ItemDetail = ({ data }) => {
   return (
     <div className="detail__container">
         <div className="detail">
+            <Link to='/' className='back-detail'>
+              <i className="bi bi-arrow-bar-left"></i>
+              {/* <i class="bi bi-x-circle"></i> */}
+            </Link>
             <img className="detail__img" src={data.image} alt={data.title} />
             <div className="content-detail">
                 <h1 className='title-detail'>{data.title}</h1>
+                <p className='desc-detail'>{data.desc}</p>
+                <p className='price-detail'>${data.price}</p>
                 {
                   goCart
                     ? <Link to='/cart'><button className='btn-detail'>Terminar compra</button></Link>
