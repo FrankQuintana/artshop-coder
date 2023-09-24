@@ -17,7 +17,6 @@ const ItemDetail = ({ data }) => {
         <div className="detail">
             <Link to='/' className='back-detail'>
               <i className="bi bi-arrow-bar-left"></i>
-              {/* <i class="bi bi-x-circle"></i> */}
             </Link>
             <img className="detail__img" src={data.image} alt={data.title} />
             <div className="content-detail">

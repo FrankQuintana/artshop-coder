@@ -20,6 +20,7 @@ const Cart = () => {
 
   return (
     <>
+      <Link to='/' className='back-home'><i className="bi bi-arrow-bar-left">Seguir comprando</i></Link>
       {
         cart.map(product => <ItemCart key={product.id} product={product} />)
       }
